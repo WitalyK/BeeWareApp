@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "First Project Name"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/firstappname"
+license = "BSD license"
+author = 'WitalyK'
+author_email = "witalyk@example.com"
+
+[tool.briefcase.app.firstappname]
+formal_name = "First formal name"
+description = "Description my first app"
+icon = "src/firstappname/resources/firstappname"
+sources = ['src/firstappname']
+requires = []
+
+
+[tool.briefcase.app.firstappname.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.firstappname.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.firstappname.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.firstappname.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.firstappname.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.3
+Name: firstappname
+Formal-Name: First formal name
+App-ID: com.example.firstappname
+Version: 0.0.1
+Home-page: https://example.com/firstappname
+Author: WitalyK
+Author-email: witalyk@example.com
+Summary: Description my first app
